@@ -44,12 +44,22 @@ const Header = () => (
       className='app__header-img'
     >
       <img src={images.profile} alt='profile_bg' />
-      <motion.img
-        whileInView={{ scale: [0, 1] }}
-        transition={{ duration: 1, ease: "easeInOut" }}
-        src={images.circle}
-        alt='profile_circle'
-        className='overlay_circle'
+
+      <motion.div
+        className='box'
+        animate={{
+          scale: [0.5, 1, 1, 0.5, 0.5],
+          rotate: [0, 0, 180, 180, 0],
+          borderRadius: ["51%", "51%", "50%", "50%", "51%"],
+          background: ["#DDD", "#FFF", "#DDD", "#FFF", "#DDD"],
+        }}
+        transition={{
+          duration: 2,
+          ease: "easeInOut",
+          times: [0, 0.2, 0.5, 0.8, 1],
+          repeat: Infinity,
+          repeatDelay: 1,
+        }}
       />
     </motion.div>
 

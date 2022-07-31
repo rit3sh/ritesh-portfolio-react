@@ -35,7 +35,7 @@ import nb from "../assets/nb.png"
 import skype from "../assets/skype.png"
 import spotify from "../assets/spotify.png"
 import csharp from "../assets/csharp.png"
-import sqlserver from "../assets/sqlserver.png"
+import sql from "../assets/sql.png"
 import azure from "../assets/azure.png"
 
 export default {
@@ -73,6 +73,6 @@ export default {
   skype,
   spotify,
   csharp,
-  sqlserver,
+  sql,
   azure,
 }
